@@ -10,8 +10,6 @@
 	<dict>
 		<key>BUNDLE_ID</key>
 		<string>com.GraphPad.Prism</string>
-		<key>NAME</key>
-		<string>Prism</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
@@ -80,7 +78,7 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-					<string>%NAME%-%version%</string>
+					<string>%NAME%_%LATEST_MAJOR_VERSION%%LATEST_UPDATE%_Installer</string>
 					<key>pkgroot</key>
 					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
 					<key>version</key>
