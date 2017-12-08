@@ -82,7 +82,7 @@
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>pkgname</key>
-                    <string>%DEVELOPER% %NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE% Installer</string>
+                    <string>%DEVELOPER% %NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE%</string>
                     <key>pkgroot</key>
                     <string>%RECIPE_CACHE_DIR%/%DEVELOPER% %NAME%</string>
                     <key>version</key>
