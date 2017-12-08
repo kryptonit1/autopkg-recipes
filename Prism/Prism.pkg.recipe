@@ -8,10 +8,10 @@
 	<string>com.github.kryptonit1.pkg.Prism</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>Prism</string>
-		<key>BUNDLE_ID</key>
-		<string>com.GraphPad.Prism</string>
+        <key>NAME</key>
+        <string>Prism</string>
+        <key>BUNDLE_ID</key>
+        <string>com.GraphPad.Prism</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
