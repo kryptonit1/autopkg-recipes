@@ -8,6 +8,8 @@
     <string>com.github.kryptonit1.LANrev.Prism</string>
     <key>Input</key>
     <dict>
+        <key>DEVELOPER</key>
+        <string>GraphPad</string>
         <key>NAME</key>
         <string>Prism</string>
     </dict>
@@ -23,7 +25,7 @@
             <key>Arguments</key>
             <dict>
                 <key>dest_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/GraphPad %NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE% (Eng).amsdpackages</string>
+                <string>%RECIPE_CACHE_DIR%/%DEVELOPER% %NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE% (Eng).amsdpackages</string>
                 <key>sdpackages_ampkgprops_path</key>
                 <string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
                 <key>source_payload_path</key>

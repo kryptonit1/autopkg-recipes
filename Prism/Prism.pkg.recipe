@@ -8,6 +8,8 @@
     <string>com.github.kryptonit1.pkg.Prism</string>
     <key>Input</key>
     <dict>
+        <key>DEVELOPER</key>
+        <string>GraphPad</string>
         <key>NAME</key>
         <string>Prism</string>
         <key>BUNDLE_ID</key>
@@ -28,7 +30,7 @@
                     <string>0775</string>
                 </dict>
                 <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <string>%RECIPE_CACHE_DIR%/GraphPad %NAME%</string>
             </dict>
             <key>Processor</key>
             <string>PkgRootCreator</string>
@@ -80,9 +82,9 @@
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>pkgname</key>
-                    <string>%NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE%</string>
+                    <string>%DEVELOPER% %NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE% Installer</string>
                     <key>pkgroot</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/%DEVELOPER% %NAME%</string>
                     <key>version</key>
                     <string>%version%</string>
                 </dict>
