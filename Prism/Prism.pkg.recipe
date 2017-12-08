@@ -2,94 +2,94 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Description</key>
-  <string>Downloads the latest version of GraphPad Prism and creates a package.</string>
-  <key>Identifier</key>
-  <string>com.github.kryptonit1.pkg.Prism</string>
-  <key>Input</key>
-  <dict>
-    <key>NAME</key>
-    <string>Prism</string>
-    <key>BUNDLE_ID</key>
-    <string>com.GraphPad.Prism</string>
-  </dict>
-  <key>MinimumVersion</key>
-  <string>0.6.1</string>
-  <key>ParentRecipe</key>
-  <string>com.github.kryptonit1.download.Prism</string>
-  <key>Process</key>
-  <array>
-    <dict>
-      <key>Arguments</key>
-      <dict>
-        <key>pkgdirs</key>
-        <dict>
-          <key>Applications</key>
-          <string>0775</string>
-        </dict>
-        <key>pkgroot</key>
-        <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-      </dict>
-      <key>Processor</key>
-      <string>PkgRootCreator</string>
-    </dict>
-    <dict>
-      <key>Comment</key>
-      <string>Locate the latest major version of Prism</string>
-      <key>Processor</key>
-      <string>URLTextSearcher</string>
-      <key>Arguments</key>
-      <dict>
-        <key>url</key>
-        <string>https://www.graphpad.com/support/</string>
-        <key>re_pattern</key>
-        <string>([\d]+).[\d]+[a-z] \(Mac\)</string>
-        <key>result_output_var_name</key>
-        <string>LATEST_MAJOR_VERSION</string>
-      </dict>
-    </dict>
+	<key>Description</key>
+	<string>Downloads the latest version of GraphPad Prism and creates a package.</string>
+	<key>Identifier</key>
+	<string>com.github.kryptonit1.pkg.Prism</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Prism</string>
+		<key>BUNDLE_ID</key>
+		<string>com.GraphPad.Prism</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.6.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.kryptonit1.download.Prism</string>
+	<key>Process</key>
+	<array>
 		<dict>
-      <key>Arguments</key>
-      <dict>
-        <key>destination_path</key>
-        <string>%pkgroot%/Applications/%NAME% %LATEST_MAJOR_VERSION%.app</string>
-        <key>source_path</key>
-        <string>%pathname%/%NAME% %LATEST_MAJOR_VERSION%.app</string>
-      </dict>
-      <key>Processor</key>
-      <string>Copier</string>
-    </dict>
-    <dict>
-      <key>Arguments</key>
-      <dict>
-        <key>pkg_request</key>
-        <dict>
-          <key>chown</key>
-          <array>
-            <dict>
-              <key>group</key>
-              <string>admin</string>
-              <key>path</key>
-              <string>Applications</string>
-              <key>user</key>
-              <string>root</string>
-            </dict>
-          </array>
-          <key>id</key>
-          <string>%BUNDLE_ID%</string>
-          <key>options</key>
-          <string>purge_ds_store</string>
-          <key>pkgname</key>
-          <string>%NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE%</string>
-          <key>pkgroot</key>
-          <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-          <key>version</key>
-          <string>%version%</string>
-        </dict>
-      </dict>
-      <key>Processor</key>
-      <string>PkgCreator</string>
-    </dict>
-  </array>
+			<key>Arguments</key>
+			<dict>
+				<key>pkgdirs</key>
+				<dict>
+					<key>Applications</key>
+					<string>0775</string>
+				</dict>
+				<key>pkgroot</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgRootCreator</string>
+		</dict>
+		<dict>
+			<key>Comment</key>
+			<string>Locate the latest major version of Prism</string>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+			<key>Arguments</key>
+			<dict>
+				<key>url</key>
+				<string>https://www.graphpad.com/support/</string>
+				<key>re_pattern</key>
+				<string>([\d]+).[\d]+[a-z] \(Mac\)</string>
+				<key>result_output_var_name</key>
+				<string>LATEST_MAJOR_VERSION</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>destination_path</key>
+				<string>%pkgroot%/Applications/%NAME% %LATEST_MAJOR_VERSION%.app</string>
+				<key>source_path</key>
+				<string>%pathname%/%NAME% %LATEST_MAJOR_VERSION%.app</string>
+			</dict>
+			<key>Processor</key>
+			<string>Copier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_request</key>
+				<dict>
+					<key>chown</key>
+					<array>
+						<dict>
+							<key>group</key>
+							<string>admin</string>
+							<key>path</key>
+							<string>Applications</string>
+							<key>user</key>
+							<string>root</string>
+						</dict>
+					</array>
+					<key>id</key>
+					<string>%BUNDLE_ID%</string>
+					<key>options</key>
+					<string>purge_ds_store</string>
+					<key>pkgname</key>
+					<string>%NAME% %LATEST_MAJOR_VERSION%%LATEST_UPDATE%</string>
+					<key>pkgroot</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+					<key>version</key>
+					<string>%version%</string>
+				</dict>
+			</dict>
+			<key>Processor</key>
+			<string>PkgCreator</string>
+		</dict>
+	</array>
 </dict>
 </plist>
