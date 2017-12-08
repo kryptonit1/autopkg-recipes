@@ -19,7 +19,7 @@
         <array>
             <dict>
                 <key>Comment</key>
-                <string>Locate the latest major version of Prism</string>
+                <string>Locate the latest major version of GraphPad Prism</string>
                 <key>Processor</key>
                 <string>URLTextSearcher</string>
                 <key>Arguments</key>
