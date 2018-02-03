@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of GraphPad Prism.</string>
+    <string>Downloads the latest version of GraphPad Prism</string>
     <key>Identifier</key>
     <string>com.github.kryptonit1.download.prism</string>
     <key>Input</key>

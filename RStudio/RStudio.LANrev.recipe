@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.LANrev.RStudio</string>
+    <string>com.github.kryptonit1.lanrev.rstudio</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>RStudio</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.rtrouton.pkg.RStudio</string>
+    <string>com.github.rtrouton.pkg.rstudio</string>
     <key>MinimumVersion</key>
     <string>0.2.9</string>
     <key>Process</key>

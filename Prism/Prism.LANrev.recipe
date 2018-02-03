@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server.</string>
+    <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.LANrev.prism</string>
+    <string>com.github.kryptonit1.lanrev.prism</string>
     <key>Input</key>
     <dict>
         <key>DEVELOPER</key>
