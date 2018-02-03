@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.kryptonit1.download.Prism</string>
+    <string>com.github.kryptonit1.download.prism</string>
     <key>Process</key>
     <array>
         <dict>
