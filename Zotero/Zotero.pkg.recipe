@@ -41,15 +41,15 @@
               <string>PkgRootCreator</string>
           </dict>
           <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>destination_path</key>
-                <string>%pkgroot%/Applications/%NAME%.app</string>
-                <key>source_path</key>
-                <string>%pathname%/%NAME%.app</string>
-            </dict>
-            <key>Processor</key>
-            <string>Copier</string>
+              <key>Arguments</key>
+              <dict>
+                  <key>destination_path</key>
+                  <string>%pkgroot%/Applications/%NAME%.app</string>
+                  <key>source_path</key>
+                  <string>%pathname%/%NAME%.app</string>
+              </dict>
+              <key>Processor</key>
+              <string>Copier</string>
           </dict>
           <dict>
             <key>Arguments</key>
