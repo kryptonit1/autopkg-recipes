@@ -5,16 +5,16 @@
     <key>Description</key>
     <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.LANrev.zotero-win</string>
+    <string>com.github.kryptonit1.LANrev.R</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Zotero</string>
+        <string>R</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hansen-m.download.zotero-win</string>
+    <string>io.github.hjuutilainen.download.R</string>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
+    <string>0.3.1</string>
     <key>Process</key>
     <array>
         <dict>
@@ -29,15 +29,15 @@
                 <key>source_payload_path</key>
                 <string>%pkg_path%</string>
                 <key>payload_name_prefix</key>
-                <string>[Win][AutoPkg] </string>
+                <string>[Mac][AutoPkg] </string>
                 <key>sd_name_prefix</key>
-                <string>[Win] </string>
+                <string>[Mac] </string>
                 <key>import_pkg_to_servercenter</key>
                 <true/>
             </dict>
             <key>SharedProcessorRepoURL</key>
             <string>https://github.com/jbaker10/LANrevImporter</string>
-          </dict>
-      </array>
+        </dict>
+    </array>
 </dict>
 </plist>

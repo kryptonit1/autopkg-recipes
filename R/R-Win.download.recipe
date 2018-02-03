@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+		<key>Description</key>
+		<string>Downloads the latest R installer for Windows</string>
+		<key>Identifier</key>
+		<string>com.github.kryptonit1.download.r-win</string>
+		<key>Input</key>
+		<dict>
+				<key>NAME</key>
+				<string>R</string>
+		</dict>
+		<key>MinimumVersion</key>
+		<string>0.3.1</string>
+		<key>Process</key>
+		<array>
+				<dict>
+					<key>Processor</key>
+					<string>URLTextSearcher</string>
+					<key>Arguments</key>
+					<dict>
+							<key>url</key>
+							<string>https://cloud.r-project.org/bin/windows/base/</string>
+							<key>re_pattern</key>
+							<string>(?P&lt;r_filename&gt;R-(?P&lt;r_version&gt;[0-9\.]+)\-win.exe)</string>
+					</dict>
+				</dict>
+				<dict>
+						<key>Processor</key>
+						<string>URLDownloader</string>
+						<key>Arguments</key>
+						<dict>
+								<key>url</key>
+								<string>https://cloud.r-project.org/bin/windows/base/%r_filename%</string>
+								<key>filename</key>
+								<string>%NAME%.exe</string>
+						</dict>
+				</dict>
+		</array>
+</dict>
+</plist>
