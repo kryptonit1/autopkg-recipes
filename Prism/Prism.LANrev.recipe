@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server.</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.LANrev.Prism</string>
+    <string>com.github.kryptonit1.LANrev.prism</string>
     <key>Input</key>
     <dict>
         <key>DEVELOPER</key>
@@ -14,7 +14,7 @@
         <string>Prism</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.kryptonit1.pkg.Prism</string>
+    <string>com.github.kryptonit1.pkg.prism</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Process</key>

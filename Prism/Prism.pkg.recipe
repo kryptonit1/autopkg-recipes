@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of GraphPad Prism and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.pkg.Prism</string>
+    <string>com.github.kryptonit1.pkg.prism</string>
     <key>Input</key>
     <dict>
         <key>DEVELOPER</key>

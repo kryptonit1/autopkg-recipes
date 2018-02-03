@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Zotero and creates a package</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.pkg.Zotero</string>
+    <string>com.github.kryptonit1.pkg.zotero</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
