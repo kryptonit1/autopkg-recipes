@@ -6,6 +6,11 @@
 		<string>Downloads the latest R installer for Windows</string>
 		<key>Identifier</key>
 		<string>com.github.kryptonit1.download.r-win</string>
+		<key>Input</key>
+		<dict>
+				<key>NAME</key>
+				<string>R</string>
+		</dict>
 		<key>MinimumVersion</key>
 		<string>0.3.1</string>
 		<key>Process</key>
