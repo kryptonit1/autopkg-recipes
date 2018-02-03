@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server</string>
     <key>Identifier</key>
-    <string>com.github.kryptonit1.LANrev.Zotero</string>
+    <string>com.github.kryptonit1.LANrev.zotero</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Zotero</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.kryptonit1.pkg.Zotero</string>
+    <string>com.github.kryptonit1.pkg.zotero</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Process</key>
