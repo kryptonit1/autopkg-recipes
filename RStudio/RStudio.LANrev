@@ -9,12 +9,12 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Zotero</string>
+        <string>RStudio</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.kryptonit1.pkg.zotero</string>
+    <string>com.github.rtrouton.pkg.RStudio</string>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string>0.2.9</string>
     <key>Process</key>
     <array>
         <dict>
@@ -37,7 +37,7 @@
             </dict>
             <key>SharedProcessorRepoURL</key>
             <string>https://github.com/jbaker10/LANrevImporter</string>
-          </dict>
-      </array>
+        </dict>
+    </array>
 </dict>
 </plist>
