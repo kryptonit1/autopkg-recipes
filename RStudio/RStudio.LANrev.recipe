@@ -12,7 +12,7 @@
         <string>RStudio</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.rtrouton.pkg.rstudio</string>
+    <string>com.github.rtrouton.pkg.RStudio</string>
     <key>MinimumVersion</key>
     <string>0.2.9</string>
     <key>Process</key>
